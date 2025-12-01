@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background-color: #2d6a54;
+}
+
+header {
+    background-color: #1a4d3d;
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo_section {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.logo_icon {
+    font-size: 1.5rem;
+}
+
+.icons {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    align-items: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.header_right {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.cart {
+    position: relative;
+    cursor: pointer;
+}
+
+.cart_badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #e74c3c;
+    color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.login_btn {
+    background: transparent;
+    border: 2px solid #fff;
+    padding: 0.5rem 1.5rem;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.shop_section {
+    display: flex;
+    padding: 2rem 3rem;
+    gap: 2rem;
+    min-height: calc(100vh - 80px);
+}
+
+.filter_sidebar {
+    width: 180px;
+    flex-shrink: 0;
+}
+
+.filter_box {
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.filter_box h3 {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.filter_btn {
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    color: #1a4d3d;
+    border: none;
+    padding: 0.6rem 1rem;
+    margin-bottom: 0.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+/* Shop Content */
+.shop_content {
+    flex: 1;
+}
+
+.shop_title {
+    font-size: 4rem;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #fff;
+}
+
+.product_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.product_card {
+    background-color: #d4e4dc;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 5px solid #b8d4c8;
+    transition: transform 0.3s;
+}
+
+
+
+.product_image {
+    position: relative;
+    height: 250px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.product_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rating {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #4a9d7a;
+    color: #fff;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+.product_info {
+    padding: 1rem;
+    text-align: center;
+    background-color: #d4e4dc;
+}
+
+.product_info h3 {
+    color: #0d2820;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.price {
+    color: #0d2820;
+    font-size: 0.95rem;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+
+.buy_btn {
+    background-color: #4a9d7a;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 2rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.95rem;
+    transition: background-color 0.3s;
+}
+
+footer {
+    background-color: #0d2820;
+    padding: 3rem;
+    color: #fff;
+}
+
+.footer_content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.footer_section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.footer_section ul {
+    list-style: none;
+}
+
+.footer_section ul li {
+    margin-bottom: 1rem;
+}
+
+.footer_section a {
+    color: #b8d4c8;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer_section a:hover {
+    color: #fff;
+}
+
+.contact_item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    color: #b8d4c8;
+}
+
+.contact_icon {
+    font-size: 1.2rem;
+}
+
